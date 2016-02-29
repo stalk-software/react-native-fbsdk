@@ -8,9 +8,7 @@
  */
 
 #import "AppDelegate.h"
-
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
-
 #import "RCTRootView.h"
 
 @implementation AppDelegate
@@ -57,9 +55,10 @@
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
-  
-  return [[FBSDKApplicationDelegate sharedInstance] application:application
+
+  [[FBSDKApplicationDelegate sharedInstance] application:application
                            didFinishLaunchingWithOptions:launchOptions];
+  return YES;
 }
 
 - (BOOL)application:(UIApplication *)application
@@ -71,4 +70,5 @@
                                               sourceApplication:sourceApplication
                                                      annotation:annotation];
 }
+
 @end

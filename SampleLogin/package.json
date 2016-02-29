@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "react-native": "^0.20.0",
-    "react-native-fbsdkcore": "file:../react-native-fbsdkcore/",
-    "react-native-fbsdklogin": "file:../react-native-fbsdklogin/"
+    "react-native-fbsdkcore": "0.0.8",
+    "react-native-fbsdklogin": "0.0.8"
   }
 }
